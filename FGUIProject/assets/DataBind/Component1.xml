@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="800,600">
   <displayList>
-    <text id="n0_97sm" name="n0" xy="281,144" size="16,19" customData="name" fontSize="12" text="??"/>
+    <text id="n0_97sm" name="n0" xy="281,144" size="16,19" customData="{&#xA;&#x9;&quot;bind&quot;: {&#xA;&#x9;&#x9;&quot;text&quot;: &quot;name&quot;&#xA;&#x9;}&#xA;}" fontSize="12" text="??"/>
   </displayList>
 </component>

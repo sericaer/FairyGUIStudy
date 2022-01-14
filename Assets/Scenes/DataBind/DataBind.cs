@@ -16,10 +16,10 @@ public class DataBind : MonoBehaviour
 
         UIPackage.AddPackage("DataBind");
 
-        GObject gObject = UIPackage.CreateObject("DataBind", "Component1");
-        gObject.BindDataSource(testData);
+        var gComponent = UIPackage.CreateObject("DataBind", "Component1").asCom;
+        gComponent.BindDataSource(testData);
 
-        GRoot.inst.AddChild(gObject.asCom);
+        GRoot.inst.AddChild(gComponent);
     }
 
     // Update is called once per frame
