@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="cm8n9fat">
+  <resources>
+    <component id="97sm0" name="Component1.xml" path="/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

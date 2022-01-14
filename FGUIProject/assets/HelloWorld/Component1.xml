@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <text id="n0_97sm" name="n0" xy="238,143" size="16,19" customData="{&#xD;&#xA;&#x9;&quot;bind&quot;: {&#xD;&#xA;&#x9;&#x9;&quot;src&quot;: &quot;name&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}" fontSize="12" text="??"/>
+  </displayList>
+</component>
