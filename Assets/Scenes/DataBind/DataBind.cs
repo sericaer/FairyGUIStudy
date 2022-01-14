@@ -28,35 +28,37 @@ public class DataBind : MonoBehaviour
         testData.name = count.ToString();
         count++;
     }
+
+    public class TestData : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public string name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
+
+                OnPropertyChanged("name");
+            }
+        }
+
+        private string _name;
+
+        public TestData()
+        {
+            _name = "Init";
+        }
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
 }
 
-public class TestData : INotifyPropertyChanged
-{
-    public event PropertyChangedEventHandler PropertyChanged;
 
-    public string name
-    {
-        get
-        {
-            return _name;
-        }
-        set
-        {
-            _name = value;
-
-            OnPropertyChanged("name");
-        }
-    }
-
-    private string _name;
-
-    public TestData()
-    {
-        _name = "Init";
-    }
-
-    protected virtual void OnPropertyChanged(string propertyName)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-}
