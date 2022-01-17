@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="800,600">
   <displayList>
-    <component id="n0_c90g" name="n0" src="c90g1" fileName="Button1.xml" xy="227,165" customData="{&#xA;&#x9;&quot;bind&quot;: {&#xA;&#x9;&#x9;&quot;onClick&quot;: &quot;onClick&quot;&#xA;&#x9;}&#xA;}"/>
+    <component id="n0_c90g" name="n0" src="c90g1" fileName="Button1.xml" xy="227,165" customData="{&#xA;&#x9;&quot;bind&quot;: {&#xA;&#x9;&#x9;&quot;onClick&quot;: &quot;OnBtn1Click&quot;&#xA;&#x9;}&#xA;}"/>
+    <component id="n1_mkao" name="n1" src="c90g1" fileName="Button1.xml" xy="226,265" customData="{&#xA;&#x9;&quot;bind&quot;: {&#xA;&#x9;&#x9;&quot;onClick&quot;: &quot;OnBtn2Click&quot;,&#xA;        &quot;enable&quot;:&quot;isBtn2Enable&quot;&#xA;&#x9;}&#xA;}"/>
   </displayList>
 </component>

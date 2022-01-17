@@ -32,16 +32,40 @@ public class ButtonBind : MonoBehaviour
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-
-        public void onClick()
+        public bool isBtn2Enable
         {
-            Debug.Log("onClick");
+            get
+            {
+                return _isBtn2Enable;
+            }
+            set
+            {
+                _isBtn2Enable = value;
+                OnPropertyChanged(nameof(isBtn2Enable));
+            }
+        }
+
+        private bool _isBtn2Enable;
+
+        public void OnBtn1Click()
+        {
+            Debug.Log("Button1 Clicked");
+            isBtn2Enable = !isBtn2Enable;
+        }
+
+        public void OnBtn2Click()
+        {
+            Debug.Log("Button2 Clicked");
         }
 
         public TestData()
         {
-
+            isBtn2Enable = true;
         }
 
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
