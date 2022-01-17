@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <text id="n2_c90g" name="n2" xy="211,143" size="235,84" customData="{&#xA;&#x9;&quot;bind&quot;: {&#xA;&#x9;&#x9;&quot;text&quot;: &quot;input&quot;&#xA;&#x9;}&#xA;}" fontSize="12" autoSize="none" text="??" input="true"/>
+  </displayList>
+</component>
