@@ -41,7 +41,10 @@ public class TextInputBind : MonoBehaviour
             set
             {
                 _input = value;
+
                 Debug.Log($"input changed to {_input}");
+
+                OnPropertyChanged(nameof(input));
             }
         }
 
@@ -50,6 +53,11 @@ public class TextInputBind : MonoBehaviour
         public TestData()
         {
             input = "INIT";
+        }
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

@@ -7,51 +7,48 @@ public class TextFieldBind : MonoBehaviour
 {
     TestData testData;
 
-    int count = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         testData = new TestData();
 
-        UIPackage.AddPackage("DataBind");
+        UIPackage.AddPackage("TextFieldBind");
 
-        var gComponent = UIPackage.CreateObject("DataBind", "Component1").asCom;
+        var gComponent = UIPackage.CreateObject("TextFieldBind", "Component1").asCom;
         gComponent.BindDataSource(testData);
 
         GRoot.inst.AddChild(gComponent);
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        testData.name = count.ToString();
-        count++;
+        testData.count++;
     }
 
     public class TestData : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public string name
+        public int count
         {
             get
             {
-                return _name;
+                return _count;
             }
             set
             {
-                _name = value;
+                _count = value;
 
-                OnPropertyChanged("name");
+                OnPropertyChanged(nameof(count));
             }
         }
 
-        private string _name;
+        private int _count;
 
         public TestData()
         {
-            _name = "Init";
+            count = 0;
         }
 
         protected virtual void OnPropertyChanged(string propertyName)
