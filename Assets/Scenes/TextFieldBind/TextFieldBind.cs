@@ -3,7 +3,7 @@ using FairyGUI.DataBind;
 using System.ComponentModel;
 using UnityEngine;
 
-public class DataBind : MonoBehaviour
+public class TextFieldBind : MonoBehaviour
 {
     TestData testData;
 
