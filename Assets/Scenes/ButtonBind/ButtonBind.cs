@@ -45,7 +45,37 @@ public class ButtonBind : MonoBehaviour
             }
         }
 
+        public bool isBtn3Selected
+        {
+            get
+            {
+                return _isBtn3Selected;
+            }
+            set
+            {
+                _isBtn3Selected = value;
+                OnPropertyChanged(nameof(isBtn3Selected));
+
+                isBtn4Selected = value;
+            }
+        }
+
+        public bool isBtn4Selected
+        {
+            get
+            {
+                return _isBtn4Selected;
+            }
+            set
+            {
+                _isBtn4Selected = value;
+                OnPropertyChanged(nameof(isBtn4Selected));
+            }
+        }
+
         private bool _isBtn2Enable;
+        private bool _isBtn3Selected;
+        private bool _isBtn4Selected;
 
         public void OnBtn1Click()
         {

@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="800,600">
   <displayList>
-    <component id="n0_c90g" name="n0" src="c90g1" fileName="Button1.xml" xy="227,165" customData="{&#xA;&#x9;&quot;bind&quot;: {&#xA;&#x9;&#x9;&quot;onClick&quot;: &quot;OnBtn1Click&quot;&#xA;&#x9;}&#xA;}"/>
-    <component id="n1_mkao" name="n1" src="c90g1" fileName="Button1.xml" xy="226,265" customData="{&#xA;&#x9;&quot;bind&quot;: {&#xA;&#x9;&#x9;&quot;onClick&quot;: &quot;OnBtn2Click&quot;,&#xA;        &quot;enable&quot;:&quot;isBtn2Enable&quot;&#xA;&#x9;}&#xA;}"/>
+    <component id="n2_mkao" name="n2" src="mkao2" fileName="ButtonClick.xml" xy="112,91" customData="{&#xD;&#xA;&#x9;&quot;bind&quot;: {&#xD;&#xA;&#x9;&#x9;&quot;onClick&quot;: &quot;OnBtn1Click&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}">
+      <Button title="Btn1"/>
+    </component>
+    <component id="n3_mkao" name="n3" src="mkao2" fileName="ButtonClick.xml" xy="112,118" customData="{&#xD;&#xA;&#x9;&quot;bind&quot;: {&#xD;&#xA;&#x9;&#x9;&quot;onClick&quot;: &quot;OnBtn2Click&quot;,&#xD;&#xA;        &quot;enable&quot;:&quot;isBtn2Enable&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}">
+      <Button title="Btn2"/>
+    </component>
+    <component id="n4_mkao" name="n4" src="mkao3" fileName="ButtonSelect.xml" xy="269,85" customData="{&#xA;&#x9;&quot;bind&quot;: {&#xA;        &quot;selected&quot;:&quot;isBtn3Selected&quot;&#xA;&#x9;}&#xA;}">
+      <Button title="Btn3"/>
+    </component>
+    <component id="n6_mkao" name="n6" src="mkao3" fileName="ButtonSelect.xml" xy="268,117" customData="{&#xA;&#x9;&quot;bind&quot;: {&#xA;        &quot;selected&quot;:&quot;isBtn4Selected&quot;&#xA;&#x9;}&#xA;}">
+      <Button title="Btn4"/>
+    </component>
   </displayList>
 </component>
